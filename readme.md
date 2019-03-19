@@ -53,7 +53,7 @@ To select for the R-bulk specific *k*-mers, use the difference function of glist
 ```
 GenomeTester4/bin/glistcompare R-bulk.all.cutoff2_31_intersect.list S-bulk.all.cutoff2_31_intersect.list -d -o R-bulk-specific-kmers.cutoff2
 ```
-To select for the R-bulk specific *k*-mers with a specific frequency (depending of the expected sequencing depth of your haplotype of interest), use the intersection and the difference functions of glistcompare. For instance for a lower cutoff of 10 and an upper cutoff of 20:
+To select for the R-bulk specific *k*-mers with a specific frequency (depending on the expected sequencing depth of your haplotype of interest), use the intersection and the difference functions of glistcompare. For instance for a lower cutoff of 10 and an upper cutoff of 20:
 ```
 GenomeTester4/bin/glistcompare R-bulk-specific-kmers.cutoff2_31_intersect.list R-bulk-specific-kmers.cutoff2_31_intersect.list -i -c 10 -o R-bulk-specific-kmers.cutoff10
 GenomeTester4/bin/glistcompare R-bulk-specific-kmers.cutoff2_31_intersect.list R-bulk-specific-kmers.cutoff2_31_intersect.list -i -c 21 -o R-bulk-specific-kmers.cutoff21
