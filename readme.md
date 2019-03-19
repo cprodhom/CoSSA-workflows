@@ -98,7 +98,7 @@ bwa samse reference.fasta kmer.file.reference.sai kmer.file.fq | samtools view -
 samtools index kmer.file.reference.samse.srt.bam
 ```
 Now the *k*-mers are mapped to the reference, you can count how many *k*-mers mapped to each chromosome bin.
-Example for 1Mb bin:
+Example for 1Mb bins:
 ```
 bedtools makewindows -b chr01.bed -w 1000000 | bedtools intersect -a - - kmer.file.reference.samse.srt.bam -c -bed > kmer.file.reference.chr01.txt
 bedtools makewindows -b chr02.bed -w 1000000 | bedtools intersect -a - - kmer.file.reference.samse.srt.bam -c -bed > kmer.file.reference.chr02.txt
