@@ -106,10 +106,16 @@ bedtools makewindows -b chr02.bed -w 1000000 | bedtools intersect -a - - kmer.fi
 ```
 ## CoSSA: BSA without a reference genome
 ### Extract the PE reads containing the *k*-mers of interest
-To extract the PE reads containing at least x *k*-mers from your *k*-mer set, use the shell script extract_reads_from_kmers.sh. This shell script reformats the *k*-mer table and extracts the reads containing at least x *k*-mers from the list using the kfastqfilter tool.
+Before extracting the PE reads containing the selected *k*-mers, the *k*-mers list should be sorted:
+
+```
+GenomeTester4/bin/glistquery kmer.file.list > kmer.file.kmer
+sort kmer.file.kmer > kmer.file.sorted.kmer
+```
+To extract the PE reads containing at least x *k*-mers from your *k*-mer set, use the shell script extract_reads_from_kmers.sh. This shell script reformats the sorted *k*-mer table and extracts the reads containing at least x *k*-mers from the list using the kfastqfilter tool.
 Example:
 ```
-qsub extract_reads_from_kmers.sh kmer.file.kmer
+qsub extract_reads_from_kmers.sh kmer.file.sorted.kmer
 ```
 *De novo* assemble these PE reads. 
 For example using [SPAdes]( http://cab.spbu.ru/software/spades/):
