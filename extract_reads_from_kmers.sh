@@ -16,4 +16,4 @@ read1.fq read2.fq /dev/null /dev/null \
 extracted_read1.fq extracted_read2.fq 1 
 
 ### the last number = how many kmers of the list the read must have at least
-### see further explanantions by executing kfastqfilter
+### see further explanations by executing kfastqfilter
