@@ -1,4 +1,4 @@
-# Comparative Subsequences Sets Analysis (CoSSA) README
+# Comparative Subsequence Sets Analysis (CoSSA) README
 
 CoSSA (Prodhomme *et al.*, 2019) is a set of workflows used to identify quickly and efficiently haplotype specific SNPs linked to a trait of interest from Whole Genome Sequencing data.
 
