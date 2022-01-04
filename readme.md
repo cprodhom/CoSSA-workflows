@@ -1,3 +1,5 @@
+An updated version of the CoSSA pipeline is available at http://githun.com/PBR/CoSSA. Also a CoSSA tutorial is available.
+
 # Comparative Subsequence Sets Analysis (CoSSA) README
 
 CoSSA (Prodhomme *et al.*, 2019) is a set of workflows used to identify quickly and efficiently haplotype specific SNPs linked to a trait of interest from Whole Genome Sequencing data.
