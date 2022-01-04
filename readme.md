@@ -1,4 +1,4 @@
-An updated version of the CoSSA pipeline is available at http://githun.com/PBR/CoSSA. Also a CoSSA tutorial is available.
+An updated version of the CoSSA pipeline is available at http://github.com/PBR/CoSSA. Also a CoSSA tutorial is available.
 
 # Comparative Subsequence Sets Analysis (CoSSA) README
 
